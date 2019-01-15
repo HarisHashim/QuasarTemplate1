@@ -4,6 +4,6 @@
 >
 > Refer this guide to [get started with Quasar](http://github.com/HarisHashim/Mentor-Coaching/blob/master/JS/Quasar/Quickly%20Quasar.pdf).
 >
-> However, assuming that Node jS, Quasar and Vue is already installed "npm install" and thenb "quasar dev" will do the trick ;)
+> However, assuming that Node jS, Quasar and Vue is already installed "npm install" and then "quasar dev" will do the trick ;)
  
 
