@@ -1,6 +1,12 @@
 <template>
-  <q-card class="no-border" flat>
-    <q-card-title class="white-text">{{title}}</q-card-title>
+  <q-card
+    class="no-border"
+    flat
+  >
+    <q-card-title
+      v-if="title.length !== 0"
+      class="white-text"
+    >{{title}}</q-card-title>
     <q-card-main>
       <div>
         <div class="col">
@@ -12,12 +18,22 @@
           >
             <q-list>
               <div class="q-mx-sm white-text text-left">{{button.title}}</div>
-              <q-item v-for="item in button.items" :key="item.id" class="item-no-padding q-mx-sm">
-                <q-item-side :icon="item.icon"/>
+              <q-item
+                v-for="item in button.items"
+                :key="item.id"
+                class="item-no-padding q-mx-sm"
+              >
+                <q-item-side :icon="item.icon" />
                 <q-item-main class="white-text">
-                  <div class style="width:72px;">
+                  <div
+                    class
+                    style="width:72px;"
+                  >
                     <div style="width:70px;display:inline;">
-                      <div class="white-text ellipsis" style="width:70px;">{{item.value}}</div>
+                      <div
+                        class="white-text ellipsis"
+                        style="width:70px;"
+                      >{{item.value}}</div>
                     </div>
                   </div>
                 </q-item-main>

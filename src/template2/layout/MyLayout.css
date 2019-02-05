@@ -1,0 +1,12 @@
+.left-drawer-bottom {
+  height: calc(100vh - 256px - 10px);
+}
+
+.left-drawer-bottom-top {
+  height: calc(100vh - 256px - 42px - 10px);
+}
+
+.left-drawer-bottom-text {
+  font-size: 0.8rem;
+  height: 42px;
+}
