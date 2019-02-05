@@ -1,8 +1,8 @@
-<!-- <template src= "../template1/index/index.html"/> -->
-<template src= "../template2/index/index.html"/>
+<template src= "../template1/index/index.html"></template>
+<!-- <template src= "../template2/index/index.html"></template>-->
 
-<!-- <style src= "../template1/index/index.css"/> -->
-<style src= "../template2/index/index.css"/>
+<style src= "../template1/index/index.css"></style>
+<!--<style src= "../template2/index/index.css"></style> -->
 
 <script>
 export default {

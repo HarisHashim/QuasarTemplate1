@@ -1,8 +1,8 @@
 <!-- <template src="../template1/layout/MyLayout.html"/> -->
-<template src="../template2/layout/MyLayout.html"/>
+<template src="../template2/layout/MyLayout.html"></template>
 
 <!-- <style  src= "../template1/layout/MyLayout.css"/> -->
-<style  src= "../template2/layout/MyLayout.css"/>
+<style  src= "../template2/layout/MyLayout.css"></style>
 
 <script>
 import { openURL } from "quasar";
