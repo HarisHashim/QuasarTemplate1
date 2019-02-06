@@ -12,11 +12,11 @@ export default {
       index: 0,
       slides: [
         { text: "Why Quasar?", img: "quasar-logo-full.png" },
-        { text: "Message 1", img: "camera.png" },
-        { text: "Message 2", img: "tea.png" },
-        { text: "Message 3", img: "umbrella.png" },
-        { text: "Message 4", img: "train.png" },
-        { text: "Message 5", img: "spaghetti.png" },
+        { text: "All Platforms in One Go", img: "spaghetti.png" },
+        { text: "Best practices integrated by default", img: "camera.png" },
+        { text: "Two Themes - Material theme and iOS theme", img: "train.png" },
+        { text: "Great documentation", img: "tea.png" },
+        { text: "And saving the best for last, awesome ever-growing community", img: "umbrella.png" },
         { text: "Stay tuned ...", img: "version.png" }
       ]
     };
