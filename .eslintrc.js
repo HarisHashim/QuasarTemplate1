@@ -38,8 +38,9 @@ module.exports = {
     "import/extensions": 0,
     "import/no-unresolved": 0,
     "import/no-extraneous-dependencies": 0,
-    
+
     // Custom config
+    "space-in-parens": 0,
     "space-before-function-paren": [0, "never"],
     semi: 0,
     "brace-style": 0,

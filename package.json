@@ -1,9 +1,9 @@
 {
-  "name": "moex",
+  "name": "Mobile Block Explorer",
   "version": "0.0.1",
-  "description": "My Quasar Template1",
-  "productName": "Template 1",
-  "cordovaId": "my.devs.app.template1",
+  "description": "Merge Blockchain and Crypt Mobile Block Explorer",
+  "productName": "Project Merge Mobile Block Explorer",
+  "cordovaId": "my.devs.app.moex",
   "author": "harishashim@gmail.com",
   "private": true,
   "scripts": {
@@ -12,7 +12,12 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "vue-i18n": "^7.3.3"
+    "chart.js": "^2.7.3",
+    "secure-ls": "^1.2.5",
+    "v-chartist": "^0.1.6",
+    "vue-chartist": "^2.2.0",
+    "vue-i18n": "^7.3.3",
+    "vuex-persist": "^2.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

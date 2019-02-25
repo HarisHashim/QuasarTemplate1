@@ -1,13 +1,16 @@
-
-const routes = [
-  {
-    path: '/',
-    component: () => import('layouts/MyLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/Index.vue') }
-    ]
-  }
-]
+const routes = [{
+  path: '/',
+  component: () => import('layouts/MyLayout.vue'),
+  children: [{
+    path: '',
+    name: 'home',
+    component: () => import('pages/Index.vue')
+  }, {
+    path: 'result',
+    name: 'result',
+    component: () => import('pages/SearchResult.vue')
+  }]
+}]
 
 // Always leave this as last one
 if (process.env.MODE !== 'ssr') {

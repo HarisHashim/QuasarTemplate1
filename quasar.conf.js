@@ -1,9 +1,10 @@
 // Configuration for your app
+const path = require('path');
 
-module.exports = function(ctx) {
+module.exports = function (ctx) {
   return {
     // app plugins (/src/plugins)
-    plugins: ["i18n", "axios", "conf"],
+    plugins: ["i18n", "axios", "conf"], // , "VueChartist"],
     css: ["app.styl"],
     extras: [
       ctx.theme.mat ? "roboto-font" : null,
@@ -14,6 +15,12 @@ module.exports = function(ctx) {
     ],
     supportIE: true,
     build: {
+      chainWebpack(chain) {
+        chain.resolve.alias
+          // .set('~', __dirname)
+          .set('@', path.resolve(__dirname, 'src'))
+      },
+
       scopeHoisting: true,
       ver: 0.01,
       // vueRouterMode: 'history',
@@ -60,11 +67,17 @@ module.exports = function(ctx) {
         "QCardSeparator",
         "QCardActions",
         "QChip",
-        "QTooltip"
+        "QTooltip",
+        "QSearch",
+        'QTable',
+        'QTh',
+        'QTr',
+        'QTd',
+        'QTableColumns',
       ],
       directives: ["Ripple"],
       // Quasar plugins
-      plugins: ["Notify"]
+      plugins: ["Notify", "Screen", "Loading"]
       // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
       // i18n: 'de' // Quasar language
     },
@@ -84,8 +97,7 @@ module.exports = function(ctx) {
         orientation: "portrait",
         background_color: "#ffffff",
         theme_color: "#027be3",
-        icons: [
-          {
+        icons: [{
             src: "statics/icons/icon-128x128.png",
             sizes: "128x128",
             type: "image/png"
